@@ -1,0 +1,80 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color:black;
+
+}
+
+/* Centralizar conteúdo e definir estilos básicos */
+.center {
+    text-align: center;
+    margin: 20px;
+}
+
+.imagem1 {
+    border-radius: 50%;
+    border: 5px solid green;
+    width: 150px;
+    height: 150px;
+}
+
+.texto-container {
+    text-align: left;
+    margin: 20px;
+}
+
+.image-text-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.texto2 {
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+/* Estilo das imagens */
+.imagem2, .imagem3, .imagem4 {
+    width: 400px;
+    height: auto;
+    border: 2px dashed blue;
+    border-radius: 10px;
+}
+
+/* Estilo para vídeos */
+.video-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Descrição do vídeo */
+.video-description {
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilo para o rodapé dos textos */
+p {
+    font-size: 16px;
+    line-height: 1.6
