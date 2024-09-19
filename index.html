@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERENCIADOR FINANCEIRO</title>
+    <link rel="stylesheet" href="style.css">
+
+<header>
+		<img src="julianderso.png" alt="imagem de Julianderson" class="img1">
+		<h1 class="titulo1">Julianderson Santos Sá</h1>
+		<h3>Curso: Tecnólogo em Redes de Computadores</h3>
+		<h3>Uninter - Educação a Distância (EAD)</h3>
+</header>
+
+</head>
+<body>
+    <MAin>
+        <h1>Convertendo sua TV Box em um Mini PC Ideal para Estudo</h1>
+        <h2>Gravando ISO no microSD de 8GB</h2>
+         <img src="balena_etcher1.png" alt="BalenaEtcher gravando 
+         iso" style="width: 60%;">
+        <p>
+            Utilizaremos a ferramenta BalenaEtcher para transferência de uma imagem de disco (como uma ISO) para um dispositivo de armazenamento, como um cartão microSD. Esse processo é fundamental para preparar o microSD, que será utilizado na TV Box 96 mini para instalar o sistema Armbian. O BalenaEtcher é um software fácil de usar e altamente recomendado, pois garante que a imagem seja gravada corretamente, minimizando os riscos de falhas durante a instalação do sistema operacional.
+
+A interface do BalenaEtcher é bastante intuitiva. Primeiro, você seleciona a imagem que deseja gravar, em seguida, escolhe o dispositivo de armazenamento e, por fim, inicia o processo de gravação. É importante assegurar-se de que o microSD esteja corretamente inserido na box tv e que você tenha feito backup de dados importantes, pois o processo de gravação apagará todos os dados existentes no cartão.
+        </p>
+        
+    		<hr>
+    		<br>
+    				
+        <h2>
+          Ajustes na Pasta Boot para TV Box Amlogic
+        </h2>
+        
+        <img src="configurando_arquivos_sd2.png" alt="configurando 
+          arquivo da pasta boot no microsd2" style="width: 150px; 
+          margin-right: 20px;
+          display: inline-block;">
+          
+        <img src="cofigurando_arquivos_sd1.png" alt="configurando 
+          arquivo da pasta boot no microsd" style="width: 200px; 
+          display: inline-block;">
+          
+          <p>
+            Antes de iniciar o sistema em uma TV Box com placa Amlogic, é fundamental realizar algumas alterações nos arquivos da pasta boot do cartão SD. Após gravar a imagem do Armbian no cartão, você deve acessar a partição de boot e editar o arquivo armbianEnv.txt. Nele, adicione linhas específicas que configuram parâmetros essenciais para o funcionamento adequado do sistema. É importante definir o arquivo DTB correto correspondente ao modelo da sua TV Box, como fdtfile=amlogic/meson-g12a-sei510.dtb, garantindo que o sistema reconheça corretamente o hardware durante a inicialização.
+            
+            <img src="configurando_arquivos_sd3.png" alt="configurando 
+          arquivo da pasta boot no microsd" style="width: 90%;">
+          </p> 
+    		<hr>
+    		<br>
+     
+        <h2>Inicialização da TV Box 96mini com Armbian</h2>
+        <p>
+          A TV Box 96mini pode ser inicializada utilizando o sistema operacional Armbian, que é leve e otimizado para dispositivos de baixo consumo. Para começar, insira o cartão microSD preparado com a imagem do Armbian na TV Box. Em seguida, conecte a TV Box à fonte de energia e aguarde a inicialização, que pode levar alguns minutos, dependendo da velocidade do microSD e da versão do Armbian. Durante esse processo, você verá o logotipo do fabricante seguido por mensagens de carregamento do sistema. É crucial não desligar o dispositivo nesse momento, pois isso pode danificar a instalação. Assim que a inicialização for concluída, você será apresentado à interface do Armbian, onde poderá configurar sua rede e outras preferências do sistema conforme necessário. Para uma melhor experiência, considere conectar um teclado e mouse USB, pois isso facilitará a navegação e configuração do sistema. Seguindo esses passos, você poderá utilizar sua TV Box 96mini com o Armbian de forma eficiente e prática.
+        </p>
+        <img src="tv_box_boot.jpg" alt="inserindo microsd na tv 
+        box" style="width: 300px; margin-right: 20px;">
+        
+          <img src="Carregando_sistema_Armbian_TVBOX_X96mini.png" 
+          alt="Carregando Armbian na TVBOX X96mini" style="width: 200px; 
+          display: inline-block;">
+    		<hr>
+    		<br>
+    		
+        <h2>Configuração de Senha e Editor no Armbian</h2>
+         <img src="armbian_instalado_sucesso1.png" alt="configurando senha e 
+         usuário root e editor " style="width: 300px;">
+        <p>
+          Após a inicialização do Armbian na sua TV Box Amlogic, a próxima etapa é configurar uma senha para o usuário root e escolher um editor de texto para o terminal. Ao acessar a interface do sistema pela primeira vez, você será solicitado a definir uma senha para o usuário root. É recomendável escolher uma senha forte e segura, que combine letras, números e caracteres especiais, garantindo a proteção do seu dispositivo.
+Em seguida, você terá a opção de selecionar um editor de texto para usar no terminal. O Armbian oferece várias opções populares, como nano e vim . Se você é iniciante, o nano é uma escolha excelente devido à sua simplicidade e facilidade de uso. Para selecionar seu editor preferido, basta seguir as instruções na tela.
+Após definir a senha e escolher o editor, você estará pronto para explorar e personalizar ainda mais seu sistema Armbian na TV Box 96mini.
+        		
+        		<hr>
+        		<br>
+      
+        <h2>Primeiros Passos Após a Instalação do Armbian</h2>
+        
+         <img src="Area_Trabalho_Armbian.png" 
+          alt="Area de trabalho do Armbian" style="width: 60%; 
+          display: inline-block;">
+        
+        <p>
+            A instalação do Armbian foi concluída com sucesso! Na tela inicial, você encontrará vários aplicativos pré-instalados, incluindo o LibreOffice, uma útil suíte de produtividade. A interface leve facilita a navegação e o uso do sistema.
+Embora o Armbian já venha com diversas ferramentas, se você precisar do Geany, um ambiente de desenvolvimento integrado, será necessário baixá-lo manualmente pelo terminal. Lembre-se de que a placa não suporta Wi-Fi, então uma conexão de internet cabeada é essencial para realizar esse download.
+        </p>
+        		
+        		<hr>
+        		<br>
+        		
+          <h2>Teste de Código Python e Registro de Capital</h2>
+          <p>
+		  
+            simulação de um código em Python testando e registrando alguns dados em uma planilha, demonstrando o funcionamento do gerenciador financeiro. A apresentação do código e o processo de registro são apresentados de forma clara, facilitando a compreensão do uso prático da ferramenta.
+          </p>
+          <h2>
+	      <iframe width="560" height="315" src=https://www.youtube.com/embed/d9HoOGNQOmk frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          		
+          		<hr>
+          		<br>
+	      
+            Apresentação do Sistema Armbian com IDE Geany
+          </h2>
+          <p>
+            Neste vídeo, apresentamos o sistema Armbian em funcionamento. Você poderá ver alguns aplicativos instalados, além de uma demonstração da IDE Geany, que é um ambiente de desenvolvimento integrado para programação. O vídeo mostra a interface do sistema, destacando sua usabilidade e eficiência.
+          		<iframe width="560" height="315" src="https://www.youtube.com/embed/1sFHSGKvAXg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+    </MAin>
