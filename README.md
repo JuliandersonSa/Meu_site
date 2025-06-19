@@ -1,6 +1,6 @@
 # Meu Site
 
-Este é um site simples desenvolvido para apresentar tutoriais passo a passo com imagens explicativas.
+Este é um site simples desenvolvido para apresentar tutorial passo a passo como transformar uma box tv em um mini pc.
 
 O projeto é baseado em HTML, e tem como objetivo auxiliar no aprendizado de tarefas como a instalação e configuração do sistema Armbian para TV Boxes.
 
